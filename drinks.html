@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" href="products.css"  rel="stylesheet" />
+        <link rel="stylesheet" href="products.js">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+       
+        <title>Tia's Kitchen</title>
+    </head>
+
+    <body style="background-color: #88d16b;">
+        
+        <nav>
+           
+            <div class="navbar-top">
+                <div>
+                    <button id="menuButton"><i class="fas fa-bars"></i></button>
+                    
+                    <a href="home.html">
+                        <h2 class="logo">Tia's Kitchen</h2>
+                    </a>
+                </div>
+                <div>
+                
+                    <div class="account">
+                        <a href="signup.html">
+                            <button class="account-btn">
+                                <i class="fas fa-user-alt"></i>
+                            </button>
+                            <span class="account-text">My account</span>
+                        </a>
+                     
+                    </div>
+                   
+                    <div class="shopping-cart">
+                        <div class="sum-prices">
+                            
+                            <i
+                                class="fas fa-shopping-cart shoppingCartButton"
+        
+        
+                            ></i>
+                           
+                            <h6 id="sum-prices"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navbar" id="navbar">
+                <div class="links">
+                    <ul>
+                        <li class="nav-links">
+                            <a href="home.html" class="link">Home</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="about.html" class="link">About</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="food.html" class="link">Food</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="drinks.html" class="link">Drinks</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="search" placeholder="Type Something..." />
+                        <i class="fa fa-search" id="search-icon"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                    
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+        </nav>
+        
+   
+        <h1 style="text-align: center;">Drink Items</h4>
+       
+        <main>
+            <section class="main-section">
+                <div class="product-container">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="ljuice.jpg"
+                                        alt="popular drinks"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="1"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                       
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Lemonde</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                      Made with freshly squeezed lemons
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="mjuice.jpg"
+                                        alt="popular drinks"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="2"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                       
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Mango Juice</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                      Made with fresh ripe mangos
+                                    </p>
+                                    <h6 class="price">
+                                       $<span class="priceValue">10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="pjuice.jpeg"
+                                        alt="popular drinks"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                    
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Passion Juice</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                     Made with fresh passion fruits
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="cokes.jpeg"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Coca Cola</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Sweet Carbonated Drink
+                                    </p>
+                                    <h6 class="price">
+                                       $<span class="priceValue">15</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                          <div class="product-under">
+                              <figure class="product-image">
+                                  <img
+                                      src="sprites.jpeg"
+                                      alt="popular labtops and computers"
+                                  />
+                                  <div class="product-over">
+                                      <button
+                                          class="btn btn-small addToCart"
+                                          data-product-id="4"
+                                      >
+                                          <i class="fas fa-cart-plus"></i>Add
+                                          to cart
+                                      </button>
+                                      
+                                  </div>
+                              </figure>
+                              <div class="product-summary">
+                                  <h4 class="productName">Sprite</h4>
+                                  <span class="stars"></span>
+                                  <p>
+                                      Lemon Carbonated Drink
+                                  </p>
+                                  <h6 class="price">
+                                     $<span class="priceValue">15</span>
+                                  </h6>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img
+                                    src="fantas.jpeg"
+                                    alt="popular labtops and computers"
+                                />
+                                <div class="product-over">
+                                    <button
+                                        class="btn btn-small addToCart"
+                                        data-product-id="4"
+                                    >
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Fanta</h4>
+                                <span class="stars"></span>
+                                <p>
+                                    Orange Carbonated Drink
+                                </p>
+                                <h6 class="price">
+                                   $<span class="priceValue">15</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div><div class="product">
+                      <div class="product-under">
+                          <figure class="product-image">
+                              <img
+                                  src="vmilk.jpg"
+                                  alt="popular labtops and computers"
+                              />
+                              <div class="product-over">
+                                  <button
+                                      class="btn btn-small addToCart"
+                                      data-product-id="4"
+                                  >
+                                      <i class="fas fa-cart-plus"></i>Add
+                                      to cart
+                                  </button>
+                                  
+                              </div>
+                          </figure>
+                          <div class="product-summary">
+                              <h4 class="productName">Vanilla Milkshake</h4>
+                              <span class="stars"></span>
+                              <p>
+                                Made with sweet vanilla icecream and caramel syrup
+                              </p>
+                              <h6 class="price">
+                                 $<span class="priceValue">20</span>
+                              </h6>
+                          </div>
+                      </div>
+                  </div><div class="product">
+                    <div class="product-under">
+                        <figure class="product-image">
+                            <img
+                                src="smilk.jpeg"
+                                alt="popular labtops and computers"
+                            />
+                            <div class="product-over">
+                                <button
+                                    class="btn btn-small addToCart"
+                                    data-product-id="4"
+                                >
+                                    <i class="fas fa-cart-plus"></i>Add
+                                    to cart
+                                </button>
+                                
+                            </div>
+                        </figure>
+                        <div class="product-summary">
+                            <h4 class="productName">Strawberry Milkshake</h4>
+                            <span class="stars"></span>
+                            <p>
+                              Made with strawberry icecream and freshly chopped strawberries
+                            </p>
+                            <h6 class="price">
+                               $<span class="priceValue">20</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+           
+                  
+        </main>
+        <footer>
+            <div class="footer-second">
+                <div class="footer-column-1">
+                    <h3>News</h3>
+                    <a href="#"></a>
+                    <a href="#">Deals</a>
+                    <a href="#">New Products</a>
+                </div>
+                <div class="footer-column-2">
+                    <h3>Customer service</h3>
+                    <a href="#">Contact</a>
+                    <a href="#">Track your order</a>
+                    <a href="#">Terms of purchase</a>
+                    <a href="#">Common questions</a>
+                </div>
+                <div class="footer-column-3">
+                    <h3>About us</h3>
+                    <a href="#">Who we are</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Events</a>
+                    <a href="#">Data protection</a>
+                </div>
+            </div>
+            <ul class="footer-last">
+                <li>
+                    <p><i class="fab fa-cc-mastercard"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-paypal"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-visa"></i></p>
+                </li>
+                <li>
+                    <p><i class="fab fa-cc-amex"></i></p>
+                </li>
+            </ul>
+        </footer>
+        <script src="products.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>
